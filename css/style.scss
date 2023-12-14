@@ -1,1 +1,59 @@
 // style.scss
+@import 'reset';
+
+// 변수
+$text-color-dark: #000;
+$text-color-mid: #444;
+
+body {
+    text-align: center;
+    font-size: 14px;
+}
+
+p {
+    line-height: 24px;
+    color: $text-color-mid;
+}
+
+section h2 {
+    font-size: 18px;
+}
+
+#title {
+    // background: pink;
+    height: 100vh;
+    header {
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .date {
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }   
+    }
+    .photo {
+        height: 52vh;
+        background: #ccc;
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .bottom {
+        height: 28vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 { 
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: 800;
+            span { font-weight: 400;}
+        }
+    }
+}
+
+
+
