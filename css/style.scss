@@ -66,3 +66,39 @@ section h2 {
         b { color: $main-color; }
     }
 }
+
+#invitation {
+    padding-bottom: 65px;
+    text-align: center;
+    b { color: $main-color; }
+    .invit-text {
+        margin-bottom: 50px;
+    }
+    img {
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+    ul {
+        li {
+            margin-bottom: 5px;
+        }
+        small { color: #666; }
+    }
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid $text-color-mid;
+    width: 160px;
+    padding: 4px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span { margin-left: 10px;}
+    margin: 0 auto;
+    margin-top: 26px;
+    border-radius: 50px;
+    color: $text-color-mid;
+}
