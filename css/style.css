@@ -123,4 +123,37 @@ section h2 {
 }
 .btn span {
   margin-left: 10px;
+}
+
+#calendar {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#calendar h2 {
+  margin-bottom: 9px;
+}
+#calendar table {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+  margin-top: 24px;
+  width: 100%;
+}
+#calendar table tr th:first-child,
+#calendar table tr td:first-child {
+  color: #ED6C30;
+}
+#calendar table th, #calendar table td {
+  padding: 8px 10px;
+}
+#calendar table span {
+  aspect-ratio: 1/1;
+  background: #444;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
