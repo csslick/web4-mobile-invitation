@@ -194,4 +194,37 @@ section h2 {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+}
+
+#location {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#location h2 {
+  margin-bottom: 20px;
+}
+#location address {
+  font-style: normal;
+}
+#location address b {
+  margin-bottom: 8px;
+  display: inline-block;
+}
+#location address span {
+  color: #666;
+}
+#location iframe {
+  margin-top: 20px;
+}
+#location dl {
+  margin-top: 30px;
+  text-align: left;
+}
+#location dl dt {
+  color: #000;
+  font-weight: bold;
+  margin-top: 30px;
+}
+#location dl dd {
+  color: #444;
 }/*# sourceMappingURL=style.css.map */
