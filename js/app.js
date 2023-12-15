@@ -30,4 +30,24 @@ Fancybox.bind('[data-fancybox="gallery"]', {
     // Your custom options for a specific gallery
 });
   
+
+// 글자 복사 기능
+function copyToClipBoard() {
+    // 복사할 글자 요소명
+    var content = document.querySelector('.bank-number1');
+    
+    // 텍스트 내용에 대한 범위 생성
+    var range = document.createRange();
+    range.selectNode(content);
+    
+    // 텍스트 내용 선택
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+    
+    // 선택된 텍스트 복사
+    document.execCommand('copy');
+    
+    // 선택 해제
+    window.getSelection().removeAllRanges();
+  }
   

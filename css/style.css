@@ -227,4 +227,18 @@ section h2 {
 }
 #location dl dd {
   color: #444;
+}
+
+#congra {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#congra h2 {
+  margin-bottom: 20px;
+}
+#congra h3 {
+  background: #ededed;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
