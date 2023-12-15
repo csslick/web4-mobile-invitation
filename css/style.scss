@@ -148,3 +148,28 @@ section h2 {
     margin-top: 30px;
     margin-bottom: 10px;
 }
+
+#gallery {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    h2 {
+        margin-bottom: 20px;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        li {
+            $단수: 3;
+            width: calc((100% - 10px) / $단수);
+            img {
+                width: 100%;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+                display: block;
+            }
+        }
+    }
+}
