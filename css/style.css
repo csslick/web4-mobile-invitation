@@ -22,16 +22,16 @@ img {
 
 body {
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 p {
-  line-height: 24px;
+  line-height: 1.8;
   color: #444;
 }
 
 section h2 {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 #title {
@@ -44,7 +44,7 @@ section h2 {
   align-items: center;
 }
 #title header .date {
-  font-size: 24px;
+  font-size: 2em;
   font-weight: 800;
   margin-bottom: 8px;
 }
@@ -91,6 +91,9 @@ section h2 {
 #invitation b {
   color: #ED6C30;
 }
+#invitation h2 {
+  margin-bottom: 10px;
+}
 #invitation .invit-text {
   margin-bottom: 50px;
 }
@@ -112,7 +115,7 @@ section h2 {
   display: inline-block;
   border: 1px solid #444;
   width: 160px;
-  padding: 4px 10px;
+  padding: 6px 2em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,12 +123,14 @@ section h2 {
   margin-top: 26px;
   border-radius: 50px;
   color: #444;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .btn span {
   margin-left: 10px;
 }
 
 #calendar {
+  background: #ECF0F1;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 15px;
@@ -156,4 +161,12 @@ section h2 {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+#calendar .day-text {
+  color: #ED6C30;
+}
+
+.time-info {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */
