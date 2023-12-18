@@ -49,6 +49,8 @@ function copyToClipBoard() {
     
     // 선택 해제
     window.getSelection().removeAllRanges();
+
+    alert('클립보드로 복사가 됨');
 }
   
 
