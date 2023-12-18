@@ -49,5 +49,5 @@ function copyToClipBoard() {
     
     // 선택 해제
     window.getSelection().removeAllRanges();
-  }
+}
   

@@ -31,8 +31,9 @@
         </header>
         <div class="photo">
             <img src="./images/title.jpg" alt="타이틀">
-            <video src="./images/flower_00.mp4" autoplay loop muted></video>
+            <video src="./images/flower_00.mp4" autoplay loop muted id="title_vid"></video>
         </div>
+
         <div class="bottom">
             <div class="bottom-group">
                 <h1>김준기 <span>|</span> 이진선</h1>
@@ -244,6 +245,31 @@
 
 
     <!-- 9. footer: 링크 아이콘 -->
+
+
+
+
+    <script>
+        // iOS에서 비디오 효과 지원에 문제개 있어 해결될때까지 비활성화 시킴
+        // 운영체제 정보
+        var checkUserAgent = navigator.userAgent.toLowerCase(); 
+
+        // Android
+        if(checkUserAgent.indexOf('android') != -1) { 
+            console.log('Android');
+            
+        // IOS 
+        }else if(checkUserAgent.indexOf("iphone") != -1 || checkUserAgent.indexOf("ipad") != -1 || checkUserAgent.indexOf("ipod") != -1) { 
+            console.log('iOS');
+            // video 안보이기
+            const vid = document.querySelector('#title_vid');
+            vid.style.display = 'none';
+        // other
+        }else {
+            console.log('other');
+        
+        }
+    </script>
 
 </body>
 </html>
