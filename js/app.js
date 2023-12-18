@@ -53,3 +53,28 @@ function copyToClipBoard() {
   
 
 // tab 영역
+const tab1_btn = document.getElementById('tab1_btn');
+const tab2_btn = document.getElementById('tab2_btn');
+
+// tab 버튼을 클릭 시 해당 콘텐츠 보여주기
+tab1_btn.addEventListener('click', function(){
+    console.log('tab1');
+    const tab_content = document.querySelectorAll('.content');
+    tab_content[1].classList.remove('active');
+    tab_content[0].classList.add('active');
+
+    tab2_btn.classList.remove('active');
+    tab1_btn.classList.add('active');
+});
+
+tab2_btn.addEventListener('click', function(){
+    console.log('tab2');
+    const tab_content = document.querySelectorAll('.content');
+    tab_content[0].classList.remove('active');
+    tab_content[1].classList.add('active');
+
+    // tab1_btn 스타일 제거
+    tab1_btn.classList.remove('active');
+    // tab2_btn 스타일 추가
+    tab2_btn.classList.add('active');
+});
