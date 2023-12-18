@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +21,7 @@
     <!-- 내 자바스크립트 -->
     <script src="./js/app.js" defer></script>
 </head>
+
 <body>
     <!-- 1.타이틀: 타이틀 사진 -->
     <section id="title">
@@ -38,7 +40,7 @@
         <div class="bottom">
             <div class="bottom-group">
                 <h1>김준기 <span>|</span> 이진선</h1>
-                <p>2023년 12월  24일 토요일 오후 4시<br>해피가든웨딩</p>
+                <p>2023년 12월 24일 토요일 오후 4시<br>해피가든웨딩</p>
             </div>
         </div>
     </section>
@@ -50,7 +52,8 @@
             우리의 <b>사랑</b>은 늘 봄처럼 따뜻하고<br>
             간혹, 여름처럼 뜨거울 것입니다.<br>
             <br>
-            이수동, <사랑가></p>
+            이수동, <사랑가>
+        </p>
     </section>
 
     <!-- 3.초대글: 사진(신랑,신부), 전화아이콘 -->
@@ -66,7 +69,9 @@
         </ul>
         <a href="tel:010-123-1111" class="btn">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M5.51667 8.99167C6.71667 11.35 8.65 13.275 11.0083 14.4833L12.8417 12.65C13.0667 12.425 13.4 12.35 13.6917 12.45C14.625 12.7583 15.6333 12.925 16.6667 12.925C17.125 12.925 17.5 13.3 17.5 13.7583V16.6667C17.5 17.125 17.125 17.5 16.6667 17.5C8.84167 17.5 2.5 11.1583 2.5 3.33333C2.5 2.875 2.875 2.5 3.33333 2.5H6.25C6.70833 2.5 7.08333 2.875 7.08333 3.33333C7.08333 4.375 7.25 5.375 7.55833 6.30833C7.65 6.6 7.58333 6.925 7.35 7.15833L5.51667 8.99167Z" fill="#444444"/>
+                <path
+                    d="M5.51667 8.99167C6.71667 11.35 8.65 13.275 11.0083 14.4833L12.8417 12.65C13.0667 12.425 13.4 12.35 13.6917 12.45C14.625 12.7583 15.6333 12.925 16.6667 12.925C17.125 12.925 17.5 13.3 17.5 13.7583V16.6667C17.5 17.125 17.125 17.5 16.6667 17.5C8.84167 17.5 2.5 11.1583 2.5 3.33333C2.5 2.875 2.875 2.5 3.33333 2.5H6.25C6.70833 2.5 7.08333 2.875 7.08333 3.33333C7.08333 4.375 7.25 5.375 7.55833 6.30833C7.65 6.6 7.58333 6.925 7.35 7.15833L5.51667 8.99167Z"
+                    fill="#444444" />
             </svg>
             <span>연락하기</span>
         </a>
@@ -212,8 +217,11 @@
             <b>해피가든웨딩 2층 스위트홀</b><br>
             <span>대전 서구 월드컵대로 123-10</span>
             <!-- 구글지도 -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1606.8279938138107!2d127.35544328890664!3d36.344886503519895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35654b8bd29fdbfd%3A0x2a9aca19e46fe134!2z64yA7KCE6rSR7Jet7IucIOyEnOq1rCDsm5Trk5zsu7XrjIDroZw0ODTrsojslYjquLg!5e0!3m2!1sko!2skr!4v1702624994587!5m2!1sko!2skr" width="100%" height="257" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1606.8279938138107!2d127.35544328890664!3d36.344886503519895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35654b8bd29fdbfd%3A0x2a9aca19e46fe134!2z64yA7KCE6rSR7Jet7IucIOyEnOq1rCDsm5Trk5zsu7XrjIDroZw0ODTrsojslYjquLg!5e0!3m2!1sko!2skr!4v1702624994587!5m2!1sko!2skr"
+                width="100%" height="257" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
             <!-- 교통편 -->
             <dl>
                 <dt>지하철</dt>
@@ -228,6 +236,31 @@
     </section>
 
     <!-- 7.안내사항: 탭 기능 구현 -->
+    <section id="guide">
+        <h2>안내사항</h2>
+        <div class="tab-group">
+            <a href="#tab1" class="active">식사안내</a>
+            <a href="#tab2">주차안내</a>
+        </div>
+        <div class="tab-contents">
+            <p class="content active" id="tab1">
+                식사는 결혼식 시작 30분 전 부터<br>
+                입장 가능 합니다.<br>
+                웨딩홀 지하1층에서 뷔페식으로 진행합니다.<br>
+
+                부족함이 없이 즐기실 수 있도록<br>
+                다양한 메뉴가 준비되어 있습니다.
+            </p>
+            <p class="content" id="tab2">
+                웨딩홀 주차시 2시간 무료주차가<br>
+                가능합니다.<br>
+
+                웹딩홀 주차장 만차시<br>
+                뒷편의 공용 주차장에<br>
+                1시간 무료주차가 가능합니다
+            </p>
+        </div>
+    </section>
 
     <!-- 8.축하의 마음 전하실 곳 -->
     <section id="congra">
@@ -253,24 +286,25 @@
     <script>
         // iOS에서 비디오 효과 지원에 문제개 있어 해결될때까지 비활성화 시킴
         // 운영체제 정보
-        var checkUserAgent = navigator.userAgent.toLowerCase(); 
+        var checkUserAgent = navigator.userAgent.toLowerCase();
 
         // Android
-        if(checkUserAgent.indexOf('android') != -1) { 
+        if (checkUserAgent.indexOf('android') != -1) {
             console.log('Android');
-            
-        // IOS 
-        } else if(checkUserAgent.indexOf("iphone") != -1 || checkUserAgent.indexOf("ipad") != -1 || checkUserAgent.indexOf("ipod") != -1) { 
+
+            // IOS 
+        } else if (checkUserAgent.indexOf("iphone") != -1 || checkUserAgent.indexOf("ipad") != -1 || checkUserAgent.indexOf("ipod") != -1) {
             console.log('iOS');
             // video 안보이기
             const vid = document.querySelector('#title_vid');
             vid.style.display = 'none';
-        // other
+            // other
         } else {
             console.log('other');
-        
+
         }
     </script>
 
 </body>
+
 </html>

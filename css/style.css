@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -219,6 +220,7 @@ section h2 {
 #location {
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 80px;
 }
 #location h2 {
   margin-bottom: 20px;
@@ -244,9 +246,11 @@ section h2 {
   color: #000;
   font-weight: bold;
   margin-top: 30px;
+  margin-bottom: 0.6em;
 }
 #location dl dd {
   color: #444;
+  margin-bottom: 0.4em;
 }
 
 #congra {
@@ -261,4 +265,42 @@ section h2 {
 #congra h3 {
   background: #ededed;
   padding: 10px;
+}
+
+#guide {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#guide h2 {
+  margin-bottom: 20px;
+}
+#guide .tab-group {
+  display: flex;
+}
+#guide .tab-group a {
+  border: 1px solid #ECF0F1;
+  border-bottom: none;
+  display: block;
+  width: 50%;
+  padding: 6px;
+  color: #000;
+  border-radius: 6px 6px 0 0;
+  background: #ECF0F1;
+  /* 선택시 버튼 색상 */
+}
+#guide .tab-group a.active {
+  background: #fff;
+}
+#guide .tab-contents {
+  padding: 33px 14px;
+  border-left: 1px solid #ECF0F1;
+  border-bottom: 1px solid #ECF0F1;
+  border-right: 1px solid #ECF0F1;
+}
+#guide .tab-contents .content {
+  display: none;
+  /* active일때 콘텐츠 보임 */
+}
+#guide .tab-contents .content.active {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

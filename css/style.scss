@@ -221,12 +221,15 @@ section h2 {
             color: #000;
             font-weight: bold;
             margin-top: 30px;
+            margin-bottom: 0.6em;
         }
         dd {
             color: #444;
+            margin-bottom: 0.4em;
         }
     }    
-        
+    // background: pink;  
+    padding-bottom: 80px;  
 }
 
 #congra {
@@ -242,4 +245,37 @@ section h2 {
         padding: 10px;
     }
 
+}
+
+#guide {
+    padding-left: 15px;
+    padding-right: 15px;
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .tab-group {
+        display: flex;
+        a {
+            border: 1px solid #ECF0F1;
+            border-bottom: none;
+            display: block;
+            width: 50%;
+            padding: 6px;
+            color: #000;
+            border-radius: 6px 6px 0 0;
+            background: #ECF0F1;
+            &.active { background: #fff; } /* 선택시 버튼 색상 */
+        }
+    }
+    .tab-contents {
+        padding: 33px 14px;
+        border-left: 1px solid #ECF0F1;
+        border-bottom: 1px solid #ECF0F1;
+        border-right: 1px solid #ECF0F1;
+        .content {
+            display: none;
+            &.active { display: block; } /* active일때 콘텐츠 보임 */
+        }
+    }
 }
