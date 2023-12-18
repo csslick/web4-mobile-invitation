@@ -57,8 +57,10 @@ section h2 {
   margin-bottom: 8px;
 }
 #title .photo {
+  position: relative;
   height: 52vh;
   background: #ccc;
+  overflow: hidden;
 }
 #title .photo img {
   height: 100%;
