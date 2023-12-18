@@ -45,12 +45,14 @@ section h2 {
         }   
     }
     .photo {
+        position: relative;
         height: 52vh;
         background: #ccc;
         img {
             height: 100%;
             object-fit: cover;
         }
+        overflow: hidden;
     }
     .bottom {
         height: 28vh;
@@ -72,6 +74,7 @@ section h2 {
         height: 100vh;
         // 블랜딩: 이미지 합성기능(포토샵 블랜딩 모드 참고)
         mix-blend-mode : lighten;
+        // opacity: 0.2;
         object-fit: cover;
     }
 }
