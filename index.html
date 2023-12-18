@@ -239,11 +239,11 @@
     <section id="guide">
         <h2>안내사항</h2>
         <div class="tab-group">
-            <a href="#tab1" class="active">식사안내</a>
-            <a href="#tab2">주차안내</a>
+            <a href="#tab1-content" class="active" id="tab1_btn">식사안내</a>
+            <a href="#tab2-content" id="tab2_btn">주차안내</a>
         </div>
         <div class="tab-contents">
-            <p class="content active" id="tab1">
+            <p class="content active" id="tab1-content">
                 식사는 결혼식 시작 30분 전 부터<br>
                 입장 가능 합니다.<br>
                 웨딩홀 지하1층에서 뷔페식으로 진행합니다.<br>
@@ -251,7 +251,7 @@
                 부족함이 없이 즐기실 수 있도록<br>
                 다양한 메뉴가 준비되어 있습니다.
             </p>
-            <p class="content" id="tab2">
+            <p class="content" id="tab2-content">
                 웨딩홀 주차시 2시간 무료주차가<br>
                 가능합니다.<br>
 
@@ -279,31 +279,6 @@
 
 
     <!-- 9. footer: 링크 아이콘 -->
-
-
-
-
-    <script>
-        // iOS에서 비디오 효과 지원에 문제개 있어 해결될때까지 비활성화 시킴
-        // 운영체제 정보
-        var checkUserAgent = navigator.userAgent.toLowerCase();
-
-        // Android
-        if (checkUserAgent.indexOf('android') != -1) {
-            console.log('Android');
-
-            // IOS 
-        } else if (checkUserAgent.indexOf("iphone") != -1 || checkUserAgent.indexOf("ipad") != -1 || checkUserAgent.indexOf("ipod") != -1) {
-            console.log('iOS');
-            // video 안보이기
-            const vid = document.querySelector('#title_vid');
-            vid.style.display = 'none';
-            // other
-        } else {
-            console.log('other');
-
-        }
-    </script>
 
 </body>
 
