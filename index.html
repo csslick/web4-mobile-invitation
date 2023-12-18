@@ -31,7 +31,8 @@
         </header>
         <div class="photo">
             <img src="./images/title.jpg" alt="타이틀">
-            <video src="./images/flower_00.mp4" autoplay loop muted id="title_vid"></video>
+            <!-- <video src="./images/flower_00.mp4" autoplay loop muted id="title_vid"></video> -->
+            <img src="./images/title_anim.gif" alt="title animation" class="title_anim">
         </div>
 
         <div class="bottom">
@@ -259,13 +260,13 @@
             console.log('Android');
             
         // IOS 
-        }else if(checkUserAgent.indexOf("iphone") != -1 || checkUserAgent.indexOf("ipad") != -1 || checkUserAgent.indexOf("ipod") != -1) { 
+        } else if(checkUserAgent.indexOf("iphone") != -1 || checkUserAgent.indexOf("ipad") != -1 || checkUserAgent.indexOf("ipod") != -1) { 
             console.log('iOS');
             // video 안보이기
             const vid = document.querySelector('#title_vid');
             vid.style.display = 'none';
         // other
-        }else {
+        } else {
             console.log('other');
         
         }

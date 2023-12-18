@@ -66,15 +66,15 @@ section h2 {
             span { font-weight: 400;}
         }
     }
-    video {
+    .title_anim {
         position: absolute;
         left: 0;
         top: 0;
-        min-width: 100%;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         // 블랜딩: 이미지 합성기능(포토샵 블랜딩 모드 참고)
-        mix-blend-mode : lighten;
-        // opacity: 0.2;
+        // mix-blend-mode : lighten;
+        opacity: 0.5;
         object-fit: cover;
     }
 }
